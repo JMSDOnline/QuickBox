@@ -2,8 +2,8 @@
 
 ## Script status
 
-[![Version 2.0.9-production](https://img.shields.io/badge/version-2.0.9-674172.svg?style=flat-square)](https://jmsolodesigns.com/code-projects/quick-box/seedbox-installer)
-[![GNU v3.0 License](https://img.shields.io/badge/license-GNU%20v3.0%20License-blue.svg?style=flat-square)](https://github.com/JMSDOnline/QuickBox/blob/master/LICENSE.md)
+[![Version 2.1.0-production](https://img.shields.io/badge/version-2.1.0-674172.svg?style=flat-square)](https://jmsolodesigns.com/code-projects/quick-box/seedbox-installer)
+[![GNU v3.0 License](https://img.shields.io/badge/license-GNU%20v3.0%20License-blue.svg?style=flat-square)](https://github.com/Swizards/QuickBox/blob/master/LICENSE.md)
 
 #### Ubuntu Builds
 [![Ubuntu 15.10 Passing](https://img.shields.io/badge/Ubuntu%2015.10-passing-brightgreen.svg?style=flat-square)](https://jmsolodesigns.com/code-projects/quick-box/seedbox-installer)
@@ -25,7 +25,7 @@
 
 
 ###Using a _/home_ primary partition setup? Please read this first:
-It is a known issue that will be resolved over the next few days. If you are running a server from a provider that only allows the use of __/home__ primary mounted partitions, please refrain from using QuickBox at this time. If you use __/__ primary mounted partitions, there are absolutely 0 issues with the install process. Again, this will be resolved in the next couple of days (notice revised: January 27, 2016 at 4:23PM (CST))
+It is a known issue that will be resolved over the next few days. If you are running a server from a provider that only allows the use of __/home__ primary mounted partitions, please refrain from using QuickBox at this time. If you use __/__ primary mounted partitions, there are absolutely 0 issues with the install process. Again, this will be resolved in the next couple of days (notice revised: March 19, 2016 at 5:00PM (CST))
 
 
 ### A Preview of Quick Box
@@ -63,7 +63,7 @@ autotools, cpuload, quotaspace, erasedata, extratio, extsearch, feeds, filedrop,
 * A modified version of Diskpace to support quota (by Notos)
 * Filemanager (modified to handle rar, zip, unzip, tar and bzip)
 * Fileshare Plugin (http://forums.rutorrent.org/index.php?topic=705.0) _this is bugged - help anyone?_
-* Logoff 
+* Logoff
 * Theme: QuickBox ``Dark rutorrent skin``
 * Colorful Ratios: Customized to match QuickBox Theme
 * __rutorrentMobile__: Mobile version of ruTorrent - seriously - toss TransDroid and the pain that it is... this is a new essential plugin (IMO) _Helps usher in a future version of the Quick Box script per Nginx - **as nginx via fastcgi sockets can break Transdroid funtionality**_
@@ -95,7 +95,7 @@ bash quickbox.sh
 **Run the following command to grab our development release _TESTING BRANCH_ ...**
 ```
 apt-get -yqq update; apt-get -yqq upgrade; apt-get -yqq install git curl lsb-release; \
-git clone https://github.com/Swizards/QuickBox/tree/development/QuickBox.git /root/tmp/QuickBox/; \
+git clone -b development https://github.com/Swizards/QuickBox.git /root/tmp/QuickBox/; \
 cd /root/tmp/QuickBox*; \
 bash quickbox.sh
 
